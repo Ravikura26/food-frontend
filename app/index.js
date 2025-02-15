@@ -7,18 +7,18 @@ import { Provider } from 'react-redux';
 import { store } from '../appStore/store';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://192.168.249.64:8000/api/';
+axios.defaults.baseURL = 'http://10.117.140.178:8000/api/';
 
 const Index = () => {
     const router = useRouter();
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            router.replace('delivery-home'); 
+            router.replace('delivery-home');
             // router.replace('signin');
-        }, 10);  
+        }, 10);
 
-        return () => clearTimeout(timer);  
+        return () => clearTimeout(timer);
     }, []);
 
     return (

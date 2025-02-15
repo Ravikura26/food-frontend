@@ -1,23 +1,23 @@
-import {Slot, Stack} from "expo-router"
+import { Slot, Stack } from "expo-router"
 
-const Layout = () => {
+const LayoutD = () => {
     return (
         <Stack
             screenOptions={{
-            tabBarShowLabel: false,
-            headerShown: false
-        }}>
+                tabBarShowLabel: false,
+                headerShown: false
+            }}>
             <Stack.Screen
                 name="categories"
                 options={{
-                headerShown: false
-            }}/>
+                    headerShown: false
+                }} />
             <Stack.Screen
                 name="create"
                 options={{
-                headerShown: false
-            }}/>
+                    headerShown: false
+                }} />
         </Stack>
     )
 }
-export default Layout
+export default LayoutD
